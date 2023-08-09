@@ -729,3 +729,13 @@ div[title]:hover::after {
   margin-top: 100px;
   margin-left: 100px;
   }
+  .footer-link{
+    color:#7f7e7d; 
+    text-decoration: none;
+    transition: all 0.5s ease;
+
+  }
+  .footer-link:hover{
+    color: #268026;
+
+  }
