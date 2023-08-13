@@ -1,12 +1,12 @@
  /* Define font family */
- @font-face {
+ /* @font-face {
     font-family: 'Droid Arabic Kufi';
     src: url('fonts/DroidArabicKufi-Regular.woff2') format('woff2'),
       url('fonts/DroidArabicKufi-Regular.woff') format('woff'),
       url('fonts/DroidArabicKufi-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+  } */
 
   /* Apply font family to body */
   body {
@@ -88,6 +88,7 @@
   .dark-mode .modal .icon{
     color: #000000;
   }
+
 
 .nav-link:hover .bi-cart-fill {
   transform: scale(1.2);
@@ -253,7 +254,7 @@ color: black;
   .services-title {
     color: #9f670d
   }
-
+  
 .switch .form-check-input {
     box-shadow: none;
     background-color: #2e4a8a;
@@ -271,17 +272,21 @@ color: black;
 .switch .form-check-input:focus {
     box-shadow: none;
     border-color: transparent;
+} 
+.switch .form-text{
+  font-family: 'Droid Arabic Kufi', sans-serif;
+  color: #000000;
+  font-size: 14px;
 }
 
 .list .btn.btn-primary:hover {
     border-color: #1c2e61;
     color: #ebebeb;
     background-color: #2e4a8a;
-    box-shadow: 2px 2px 5px lightblue
+    box-shadow: 2px 2px 5px lightblue;
 }
 
 .list .btn.btn-primary {
-    border-radius: 4px;
     background-color: #5e8557;
     border-color: #5e8557;
     color: black;
@@ -293,6 +298,7 @@ color: black;
 
 .list .btn.btn-primary:focus {
     background-color: #2e4a8a;
+    border-color: #2e4a8a;
     color: #ebebeb;
     box-shadow: none;
 }
@@ -300,8 +306,8 @@ color: black;
  .btn-close.btn-close-modal {  
   margin: 0;
   position: absolute;
-  top: -15px;
-  right: 280px;
+  top: -4%;
+  right: 95%;
   width: 23px;
   height: 23px;
   border-radius: 23px;
@@ -385,9 +391,10 @@ color: black;
   display: grid;
   background: #5e8557;
   place-items: center;
-  height: 100%;
-  width: 100%;
+
 }
+
+
 .map .modal{
   position: fixed;
   overflow: visible;
@@ -556,15 +563,11 @@ color: black;
   }
 
 
-.map .addMore {
-    border: none;
-    font-size: 12px;
-    background-color: transparent;
-}
-
 div[title]:hover::after {
     background-color: #ffffff;
     position: absolute;
+    left: auto;
+    top: auto;
     width: 100px;
     opacity: 0.8;
     word-break:keep-all;
@@ -668,13 +671,17 @@ div[title]:hover::after {
     }
 }
 
+.my-switch .form-switch {
+  margin: 3px 0px 0 15px;
+}
 #map-2 {
   display: none;
 }
 
-#list {
+#map {
   display: none;
 }
+
 
 .btn.btn-primary.news{
   background-color: #3b5b43;
@@ -708,7 +715,7 @@ div[title]:hover::after {
   }
 
   .social-media ul li a:hover {
-    transform: scale(1.6);
+    transform: scale(1.2);
   }
 
   .access ul li a {
@@ -721,7 +728,7 @@ div[title]:hover::after {
   }
 
   .access ul li a:hover {
-    transform: scale(1.6);
+    transform: scale(1.2);
   }
   #imgg1 {
   height: 200px;
